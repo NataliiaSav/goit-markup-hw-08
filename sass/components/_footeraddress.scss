@@ -1,0 +1,41 @@
+.footer {
+    background-color: $secondaryBcgColor;
+
+    &__container {
+        @extend %container;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__address {
+        padding: 60px 0;
+    }
+    &__logo {
+        @extend %logo;
+        color: $accentColor;
+    }
+    &__logo--accent {
+        color: $primaryWhiteColor;
+    }
+    &__list {
+        margin-top: 28px;
+    }
+    &__item {
+        margin-top: 12px;
+    }
+    &__item:first-child {
+        margin-top: 0;
+    }
+    &__item--address {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.7;
+        color: $primaryWhiteColor;
+        text-decoration: none;
+
+        transition: color 250ms $cubicBezier;
+    }
+    &__item--address:hover,
+    &__item--address:focus {
+        color: $accentColor;
+    }
+}

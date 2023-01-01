@@ -1,0 +1,58 @@
+.container {
+    @extend %container; 
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__item {
+        flex-basis: calc((100% - 60px)/3);
+        border-bottom: 1px solid $borderCardsColor;
+
+        transition: box-shadow 250ms $cubicBezier;
+    }
+    &__item:hover,
+    &__item:focus {
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+    }
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $overlayColor;
+
+        padding: 63px 24px;
+        font-size: 18px;
+        line-height: 1.3;
+        color: $primaryWhiteColor;
+
+        transform: translatey(101%);
+        transition: transform 250ms $cubicBezier;
+    }
+    &__content {
+        padding: 20px 24px;
+    }
+    &__title {
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $titleColor;
+    }
+    &__text {
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    &__item:hover &__overlay {
+        transform: translatey(0);
+    }
+}

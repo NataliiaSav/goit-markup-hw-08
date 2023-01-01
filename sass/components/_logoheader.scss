@@ -1,0 +1,8 @@
+.header__logo {
+    @extend %logo;
+    color: $logoColor;
+
+    &--accent {
+        color: $accentColor;
+    }
+}

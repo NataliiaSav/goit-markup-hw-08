@@ -1,0 +1,9 @@
+.header {
+    border-bottom: 1px solid $borderColor;
+
+    &__container {
+         @extend %container;
+        display: flex;
+        
+    }
+}

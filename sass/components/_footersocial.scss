@@ -1,0 +1,35 @@
+.footer-social {
+    padding-top: 72px;
+    padding-left: 70px;
+
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $primaryWhiteColor;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        gap: 10px;
+    }
+    
+    &__item {
+        border-radius: 50%;
+
+        transition: background-color 250ms $cubicBezier;
+    }
+    &__link {
+        @extend %sociallink;
+            background-color: rgba(255, 255, 255, 0.1);
+            fill: $primaryWhiteColor;
+        
+        &:hover,
+        &:focus {
+            background-color: $accentColor;
+        }
+    }
+}

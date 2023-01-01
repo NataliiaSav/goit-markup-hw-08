@@ -1,0 +1,44 @@
+.footer-subscribe {
+    padding-top: 72px;
+    padding-left: 93px;
+
+    &__text {
+        @extend %footertext;
+    }
+    &__form {
+        display: flex;
+        padding-top: 20px;
+    }
+    &__input {
+        display: flex;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 358px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 1.25;
+        color: $primaryWhiteColor;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: $borderRadius;
+        outline: none;
+    }
+    &__button {
+        position: relative;
+    }
+    &__button--btn {
+        @extend %button;
+        width: 200px;
+        height: 50px;
+        margin-left: 12px;
+        text-align: left;
+        padding-left: 28px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    &__button--icon {
+        position: absolute;
+        top: 14px;
+        right: 28px;
+        fill: $primaryWhiteColor;
+    }
+}

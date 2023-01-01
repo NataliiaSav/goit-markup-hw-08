@@ -1,0 +1,44 @@
+.checkbox {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+
+    &__input {
+        appearance: none;
+    }
+    &__icon {
+        position: absolute;
+        margin: 2px 8px 0 0;
+        fill: transparent;
+        border: 2px solid $secondaryBcgColor;
+        border-radius: 2px;
+    }
+    &__label {
+        position: relative;
+        padding-left: 24px;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $textColor;
+    }
+    &__link {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $accentColor;
+    }
+
+    &__input:checked + &__icon {
+        fill: $primaryWhiteColor;
+        background-color: $accentColor;
+        border-color: $accentColor;
+    }
+}
+.button__send {
+    @extend %button;
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}

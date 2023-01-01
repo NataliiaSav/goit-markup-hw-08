@@ -1,0 +1,28 @@
+.team-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 10px;
+
+    &__item {
+        border-radius: 50%;
+
+        transition: background-color 250ms $cubicBezier;
+    }
+    &__item:hover,
+    &__item:focus {
+        background-color: $accentColor;
+    }
+    &__link {
+        @extend %sociallink;
+        margin: 0;
+        padding: 0;
+        fill: $iconColor;
+
+        transition: fill 250ms $cubicBezier;
+    }
+    &__link:hover {
+        fill: $primaryWhiteColor;
+    }
+}

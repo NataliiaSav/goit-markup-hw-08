@@ -1,0 +1,39 @@
+.team {
+    @extend %section;
+    margin-top: 32px;
+    background-color: $tertiaryBcgColor;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &__container {
+        @extend %container;
+    }
+    &__title {
+        @extend %title;
+    }
+
+    &__list {
+        display: flex;
+        margin-top: 50px;
+        text-align: center;
+        gap: 30px;
+    }
+    &__item {
+        width: 270px;
+        background-color: $primaryWhiteColor;
+        border-bottom: 1px solid $borderCardsColor;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__content {
+        padding: 30px 10px;
+    }
+    &__member {
+        color: $titleColor;
+        font-weight: 500;
+        margin-bottom: 9px;
+    }
+}

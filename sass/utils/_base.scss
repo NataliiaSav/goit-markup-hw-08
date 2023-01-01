@@ -1,0 +1,33 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $textColor;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+address {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
