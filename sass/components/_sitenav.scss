@@ -42,3 +42,8 @@
         color: $accentColor;
     }
 }
+@media (max-width: 767px) {
+    .site-nav {
+      display: none;
+    }
+}

@@ -3,11 +3,9 @@ body {
     color: $textColor;
     letter-spacing: 0.03em;
 }
-
 ul {
     list-style: none;
 }
-
 h1,
 h2,
 h3,
@@ -23,6 +21,7 @@ ul {
 img {
     display: block;
     height: auto;
+    width: 100%;;
 }
 address {
     font-style: normal;
