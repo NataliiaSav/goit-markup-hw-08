@@ -1,24 +1,52 @@
 .header {
-    width: 100%;
-     border-bottom: 1px solid $borderColor;
+   
+    border-bottom: 1px solid $borderColor;
     background: $primaryBcgColor;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 
     @media screen and (min-width:768px) {
-        position: relative;
         height: 60px;        
     }
 
     &__container {
-        @extend %container;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
 
-        @media screen and (min-width: 768px) {
-            margin: 0 auto;
+        @media screen and (min-width: 480px) {
+            max-width: 480px;
         }
-     }
+    }
+}
+.header__logo {
+    @extend %logo;
+    color: $logoColor;
+
+    &--accent {
+        color: $accentColor;
+    }
+}
+@media screen and (min-width: 480px) {
+    .header__logo {
+    font-size: 24px;
+    line-height: 1.17;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header__logo {
+    font-size: 24px;
+    line-height: 1.17;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .header__logo {
+    font-size: 26px;
+    line-height: 1.2;
+    }
 }
 // %container {
 //     padding-left: 15px;
