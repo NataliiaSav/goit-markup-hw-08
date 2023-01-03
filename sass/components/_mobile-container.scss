@@ -37,9 +37,7 @@
         &.is-open {
             transform: translateX(0);
         }
-        @media screen and (max-width:479px) {
-            padding: 40px 25px;
-        }
+        
         @media screen and (min-width:768px) {
             display: none;
         }
@@ -56,6 +54,15 @@
         list-style: none;
         }
     }
+
+
+
+
+
+
+
+
+    
   
 //   .mobile-menu .link {
 //     display: block;
