@@ -2,7 +2,7 @@
     background-color: $secondaryBcgColor;
 
     &__container {
-        @extend %container;
+       
         display: flex;
         align-items: flex-start;
     }
