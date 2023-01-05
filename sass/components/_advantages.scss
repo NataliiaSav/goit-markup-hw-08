@@ -1,35 +1,73 @@
-.advantages {
-    @extend %section;
-
-    &__container {
-       
+.advantages__container {
+    @media screen and (max-width: 1199px) {
+        padding: 60px 0;
+        margin-left: auto;
+        margin-right: auto;
     }
-    &__list {
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+}
+.advantages__list {
+    @media screen and (max-width: 767px) {
+    
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+            text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+         flex-wrap: wrap;
+        gap: 30px;
+    }
+     @media screen and (min-width: 1200px) {
         display: flex;
         gap: 30px;
     }
-    &__item {
-        width: 270px;
-    }
-    &__icon {
-        display: flex;
-        width: 270px;
-        height: 120px;
-        margin-bottom: 30px;
-        justify-content: center;
-        align-items: center;
-        background-color: $tertiaryBcgColor;
-        border-radius: 4px;
-    }
-    &__subtitle {
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: $titleColor;
-    }
-    &__text {
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 1.7;
-    }
+} 
+.advantages__item {
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 4 * 15px) / 2);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
 }
+.advantages__icon {
+            display: flex;
+            height: 120px;
+            margin-bottom: 30px;
+            justify-content: center;
+            align-items: center;
+            background-color: $tertiaryBcgColor;
+            border-radius: 4px;
+           
+ }
+    
+    .advantages__subtitle {     
+        font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: $titleColor;
+            
+    }
+    
+    .advantages__text {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.7;
+    }
+//     }
+//     }
+// }
+
+    

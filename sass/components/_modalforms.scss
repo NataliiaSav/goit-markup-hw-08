@@ -1,62 +1,62 @@
-.modal-form {
-    padding: 40px;
+// .modal-form {
+//     padding: 40px;
 
-    &__title {
-        padding-bottom: 30px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.15;
-        text-align: center;
-        color: $titleColor;
-    }
-    &__content {
-        position: relative;
-    }
-    &__label {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 4px;
-        font-size: 12px;
-        line-height: 1.17;
-    }
-    &__input {
-        @extend %inputBorder;
-        display: flex;
-        width: 448px;
-        height: 40px;
-        margin-bottom: 10px;
-        padding-left: 30px;
-        fill: currentColor;
+//     &__title {
+//         padding-bottom: 30px;
+//         font-weight: 700;
+//         font-size: 20px;
+//         line-height: 1.15;
+//         text-align: center;
+//         color: $titleColor;
+//     }
+//     &__content {
+//         position: relative;
+//     }
+//     &__label {
+//         display: flex;
+//         flex-direction: column;
+//         padding-bottom: 4px;
+//         font-size: 12px;
+//         line-height: 1.17;
+//     }
+//     &__input {
+//         @extend %inputBorder;
+//         display: flex;
+//         width: 448px;
+//         height: 40px;
+//         margin-bottom: 10px;
+//         padding-left: 30px;
+//         fill: currentColor;
 
-        transition: border-color 250ms $cubicBezier;
-    }
-    &__input--comment {
-        @extend %inputBorder;
-        width: 100%;
-        height: 120px;
-        padding-left: 16px;
-        padding-top: 12px;
+//         transition: border-color 250ms $cubicBezier;
+//     }
+//     &__input--comment {
+//         @extend %inputBorder;
+//         width: 100%;
+//         height: 120px;
+//         padding-left: 16px;
+//         padding-top: 12px;
         
-        resize: none;
+//         resize: none;
         
-        &::placeholder {
-            font-family: inherit;
-            font-size: 12px;
-            line-height: 1.17;
-            color: inherit;
-        }
-    }
-    &__icon {
-        position: absolute;
-        top: 50%;
-        left: 12px;
+//         &::placeholder {
+//             font-family: inherit;
+//             font-size: 12px;
+//             line-height: 1.17;
+//             color: inherit;
+//         }
+//     }
+//     &__icon {
+//         position: absolute;
+//         top: 50%;
+//         left: 12px;
 
-        transition: fill 250ms $cubicBezier;
-    }
-    &__input:focus {
-        border-color: $accentColor;
-    }
-    &__input:focus + &__icon {
-        fill: $accentColor;
-    }
-}
+//         transition: fill 250ms $cubicBezier;
+//     }
+//     &__input:focus {
+//         border-color: $accentColor;
+//     }
+//     &__input:focus + &__icon {
+//         fill: $accentColor;
+//     }
+// }
