@@ -1,4 +1,5 @@
 .advantages__container {
+    
     @media screen and (max-width: 1199px) {
         padding: 60px 0;
         margin-left: auto;
@@ -7,8 +8,10 @@
     @media screen and (min-width: 1200px) {
         padding: 94px 0;
     }
+       
 }
 .advantages__list {
+
     @media screen and (max-width: 767px) {
     
             display: flex;
@@ -31,7 +34,7 @@
 } 
 .advantages__item {
     @media screen and (min-width: 480px) {
-            width: 450px;
+            max-width: 450px;
         }
     
         @media screen and (min-width: 768px) {
