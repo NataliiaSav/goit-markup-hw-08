@@ -1,33 +1,61 @@
-// .clients {
-//     @extend %section;
+.clients {
+    @media screen and (max-width: 1199px) {
+            padding: 60px 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    @media screen and (min-width: 1200px) {
+       padding: 94px 0;
 
-//     &__container {
-    
-//     }
-//     &__title {
-//         @extend %title;
-//     }
-//     &__set {
-//         display: flex;
-//         margin-top: 50px;
-//         gap: 30px;
-//     }
-//     &__item {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         width: 170px;
-//         height: 92px;
-//         border: 1px solid $iconColor;
-//         border-radius: $borderRadius;
-//         fill: $iconColor;
+    }    
 
-//         transition: fill 250ms $cubicBezier, border 250ms $cubicBezier;
-//     }
-//     &__item:hover,
-//     &__item:focus {
-//         fill: $accentColor;
-//         border: 1px solid $accentColor;
-//         cursor: pointer;
-//     }
-// }
+    &__title {
+        @extend %title;
+        font-size: 28px;
+        line-height: 1.18;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.17;
+        }
+    }
+    &__set {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+       @media screen and (min-width: 1200px) { 
+         margin-top: 50px;
+        gap: 30px;
+       }
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92px;
+        width: calc((100% - 4 * 15px) / 2);
+        border: 1px solid $iconColor;
+        border-radius: $borderRadius;
+        fill: $iconColor;
+
+        transition: fill 250ms $cubicBezier, border 250ms $cubicBezier;
+
+            @media screen and (min-width: 768px) {
+                width: calc((100% - 6 * 15px) / 3);
+            }
+        
+            @media screen and (min-width: 1200px) {
+                width: 170px;
+            }
+    }
+    &__item:hover,
+    &__item:focus {
+        fill: $accentColor;
+        border: 1px solid $accentColor;
+        cursor: pointer;
+    }
+}
