@@ -30,7 +30,6 @@
             <use class="menu-toggle__icon--open" href="./images/icons.svg#menu"></use>
           </svg>
         </button>
-        <div class="nav">
           <nav>
             <ul class="site-nav">
               <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Студія</a></li>
@@ -56,7 +55,6 @@
               >
             </li>
           </ul>
-        </div>
       </div>
       <!-- mobile navigation -->
       <div class="mobile-container js-menu-container" id="mobile-menu">
@@ -104,7 +102,7 @@
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </section>
-
+<!-- Переваги -->
       <section class="advantages">
         <div class="advantages__container container">
           <h2 hidden>Переваги</h2>
@@ -156,24 +154,25 @@
           </ul>
         </div>
       </section>
+      <!-- Діяльність -->
       <section class="activity">
         <div class="container">
           <h2 class="activity__title">Чим ми займаємося</h2>
           <ul class="activity__images">
             <li class="activity__images--item">
-              <img src="./images/img1.jpg" alt="Руки на клавіатурі" width="370" height="294" />
+              <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"  src="./images/box1.jpg" alt="Руки на клавіатурі" width="370" height="294" />
               <div class="activity__caption">
                 <p>Десктопні додатки</p>
               </div>
             </li>
             <li class="activity__images--item">
-              <img src="./images/img2.jpg" alt="Відкритий ноутбук" width="370" height="294" />
+              <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"  src="./images/box2.jpg" alt="Відкритий ноутбук" width="370" height="294" />
               <div class="activity__caption">
                 <p>Мобільні додатки</p>
               </div>
             </li>
             <li class="activity__images--item">
-              <img src="./images/img3.jpg" alt="Планшет в руці" width="370" height="294" />
+              <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"  src="./images/box3.jpg" alt="Планшет в руці" width="370" height="294" />
               <div class="activity__caption">
                 <p>Дизайнерські рішення</p>
               </div>
@@ -181,12 +180,21 @@
           </ul>
         </div>
       </section>
+      <!-- Команда -->
       <section class="team">
-        <div class="team__container container">
+        <div class="team__container">
           <h2 class="team__title">Наша команда</h2>
-          <ul class="team__list">
+          <ul class="team__list container">
             <li class="team__item">
-              <img src="./images/photo1.jpg" alt="Фото Ігор Дем'яненко" width="270" />
+                <picture class="team__img" >
+                   <source srcset="./images/photo1@1x.jpg 1x, ./images/photo1@2x.jpg 2x" media="(min-width: 1200px)" />
+                          
+                  <source srcset="./images/photo1-tabl@1x.jpg 1x, ./images/photo1-tabl@2x.jpg 2x" media="(min-width: 768px)" />
+                          
+                  <img srcset="./images/photo1-mob@1x.jpg 1x, ./images/photo1-mob@2x.jpg 2x" src="./images/photo1-mob@1x.jpg"
+                              alt="фото Ігор Дем’яненко" />
+                </picture>
+
               <div class="team__content">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
                 <p class="member__descr">Product Designer</p>
@@ -223,7 +231,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/photo2.jpg" alt="Фото Ольга Репіна" width="270" />
+               <picture class="team__img">
+                  <source srcset="./images/photo2@1x.jpg 1x, ./images/photo2@2x.jpg 2x" media="(min-width: 1200px)" />
+                        
+                   <source srcset="./images/photo2-tabl@1x.jpg 1x, ./images/photo2-tabl@2x.jpg 2x" media="(min-width: 768px)" />
+                        
+                   <img srcset="./images/photo2-mob@1x.jpg 1x, ./images/photo2-mob@2x.jpg 2x" src="./images/photo1-mob@1x.jpg"
+                     alt="фото Ольга Репіна" >
+                </picture>
+
               <div class="team__content">
                 <h3 class="team__member">Ольга Репіна</h3>
                 <p class="member__descr">Frontend Developer</p>
@@ -260,7 +276,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/photo3.jpg" alt="Фото Микола Тарасов" width="270" />
+              <picture class="team__img">
+                <source srcset="./images/photo3@1x.jpg 1x, ./images/photo3@2x.jpg 2x" media="(min-width: 1200px)" />
+                          
+                <source srcset="./images/photo3-tabl@1x.jpg 1x, ./images/photo3-tabl@2x.jpg 2x" media="(min-width: 768px)" />
+                          
+                <img srcset="./images/photo3-mob@1x.jpg 1x, ./images/photo3-mob@2x.jpg 2x" src="./images/photo1-mob@1x.jpg"
+                   alt="фото Микола Тарасов"  />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__member">Микола Тарасов</h3>
                 <p class="member__descr">Marketing</p>
@@ -297,7 +321,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img src="./images/photo4.jpg" alt="Фото Михайло Єрмаков" width="270" />
+              <picture class="team__img">
+                  <source srcset="./images/photo4@1x.jpg 1x, ./images/photo4@2x.jpg 2x" media="(min-width: 1200px)" />
+                          
+                  <source srcset="./images/photo4-tabl@1x.jpg 1x, ./images/photo4-tabl@2x.jpg 2x" media="(min-width: 768px)" />
+                          
+                <img srcset="./images/photo4-mob@1x.jpg 1x, ./images/photo4-mob@2x.jpg 2x" src="./images/photo1-mob@1x.jpg"
+                    alt="фото Михайло Єрмаков"  />
+              </picture>
+
               <div class="team__content">
                 <h3 class="team__member">Михайло Єрмаков</h3>
                 <p class="member__descr">UI Designer</p>
@@ -336,6 +368,7 @@
           </ul>
         </div>
       </section>
+      <!-- Клієнти -->
       <section class="clients">
         <div class="clients__container container">
           <h2 class="clients__title">Постійні клієнти</h2>

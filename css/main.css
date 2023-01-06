@@ -52,10 +52,15 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+.activity {
+  padding: 94px 0;
 }
 
 .hero__button {
@@ -75,6 +80,23 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-decoration: none;
+}
+
+.team__title, .activity__title {
+  display: block;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+}
+
+.team-social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -194,7 +216,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .nav {
+  .site-nav {
     display: none;
   }
   .mobile-container__nav {
@@ -298,7 +320,12 @@ a {
     color: #2196F3;
   }
 }
-@media screen and (min-width: 768px) {
+@media (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     display: inline-flex;
     flex-direction: column;
@@ -346,11 +373,6 @@ a {
   .contacts__element:hover, .contacts__element:focus {
     color: #2196F3;
     fill: #2196F3;
-  }
-}
-@media (max-width: 767px) {
-  .contacts {
-    display: none;
   }
 }
 .hero {
@@ -440,16 +462,14 @@ a {
   padding: 8px 24px;
 }
 
+.advantages__container {
+  padding-top: 94px;
+}
 @media screen and (max-width: 1199px) {
   .advantages__container {
     padding: 60px 0;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .advantages__container {
-    padding: 94px 0;
   }
 }
 
@@ -515,4 +535,163 @@ a {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.activity {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}
+.activity__images {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.activity__images--item {
+  position: relative;
+  width: 370px;
+}
+
+.activity__caption {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.team {
+  padding: 60px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F5F4FA;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
+.team__list {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    gap: 30px;
+  }
+}
+.team__title {
+  font-size: 28px;
+  line-height: 1.18;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    padding-bottom: 50px;
+  }
+}
+.team__item {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
+}
+.team__img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__img {
+    height: 260px;
+  }
+}
+.team__content {
+  padding: 30px 10px;
+}
+.team__member {
+  color: #212121;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.team-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+.team-social__item {
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social__item:hover, .team-social__item:focus {
+  background-color: #2196F3;
+}
+.team-social__link {
+  margin: 0;
+  padding: 0;
+  fill: #AFB1B8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social__link:hover {
+  fill: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

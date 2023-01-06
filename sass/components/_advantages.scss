@@ -1,14 +1,10 @@
 .advantages__container {
-    
+    padding-top: 94px;
     @media screen and (max-width: 1199px) {
         padding: 60px 0;
         margin-left: auto;
         margin-right: auto;
     }
-    @media screen and (min-width: 1200px) {
-        padding: 94px 0;
-    }
-       
 }
 .advantages__list {
 
@@ -69,8 +65,5 @@
             font-size: 14px;
             line-height: 1.7;
     }
-//     }
-//     }
-// }
 
     
