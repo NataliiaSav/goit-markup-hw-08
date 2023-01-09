@@ -1,76 +1,76 @@
-.footer-subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+// .footer-subscribe {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 60px;
-            }
-        @media screen and (min-width: 1200px) {
-            margin-top: 0;
-            margin-left: 94px;
-            align-items: flex-start;
-        }
-    // padding-top: 72px;
-    // padding-left: 93px;
+//     @media screen and (min-width: 768px) {
+//         margin-top: 60px;
+//             }
+//         @media screen and (min-width: 1200px) {
+//             margin-top: 0;
+//             margin-left: 94px;
+//             align-items: flex-start;
+//         }
+//     // padding-top: 72px;
+//     // padding-left: 93px;
 
-    &__text {
-        @extend %footertext;
-    }
-    &__form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        @media screen and (min-width: 1200px) {
+//     &__text {
+//         @extend %footertext;
+//     }
+//     &__form {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         padding-top: 20px;
+//         @media screen and (min-width: 1200px) {
                 
-                display: flex;
-                flex-direction: row;
-            }
+//                 display: flex;
+//                 flex-direction: row;
+//             }
         
        
-    }
-    &__input {
-        display: flex;
-        padding-left: 16px;
-        padding-right: 16px;
-        width: 450px;
-        height: 50px;
-        font-size: 16px;
-        line-height: 1.25;
-        color: $primaryWhiteColor;
-        background-color: transparent;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: $borderRadius;
-        outline: none;
-        @media screen and (min-width: 1200px) {
-            width: 358px;
-            }
-    }
-    &__button {
-        position: relative;
-    }
-    &__button--btn {
-        @extend %button;
-        margin-top: 20px;
-        width: 200px;
-        height: 50px;
-        text-align: left;
-        padding-left: 28px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        @media screen and (min-width: 1200px) {
-            margin-top: 0;
-            margin-left: 12px;
-        }
+//     }
+//     &__input {
+//         display: flex;
+//         padding-left: 16px;
+//         padding-right: 16px;
+//         width: 450px;
+//         height: 50px;
+//         font-size: 16px;
+//         line-height: 1.25;
+//         color: $primaryWhiteColor;
+//         background-color: transparent;
+//         border: 1px solid rgba(255, 255, 255, 0.3);
+//         border-radius: $borderRadius;
+//         outline: none;
+//         @media screen and (min-width: 1200px) {
+//             width: 358px;
+//             }
+//     }
+//     &__button {
+//         position: relative;
+//     }
+//     &__button--btn {
+//         @extend %button;
+//         margin-top: 20px;
+//         width: 200px;
+//         height: 50px;
+//         text-align: left;
+//         padding-left: 28px;
+//         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//         @media screen and (min-width: 1200px) {
+//             margin-top: 0;
+//             margin-left: 12px;
+//         }
            
-    }
-    &__button--icon {
-        position: absolute;
-        top: 34px;
-        right: 24px;
-        fill: $primaryWhiteColor;
-        @media screen and (min-width: 1200px) {
-               top: 14px;
-            }
-    }
-}
+//     }
+//     &__button--icon {
+//         position: absolute;
+//         top: 34px;
+//         right: 24px;
+//         fill: $primaryWhiteColor;
+//         @media screen and (min-width: 1200px) {
+//                top: 14px;
+//             }
+//     }
+// }

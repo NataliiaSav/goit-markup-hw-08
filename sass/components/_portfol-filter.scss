@@ -1,34 +1,44 @@
-// .filter {
-//     @extend %section;
-//     background-color: $primaryWhiteColor;
+.filter {
+    padding: 60px 0;
+    background-color: $primaryWhiteColor;
 
-//     &__container {
-       
-//     }
-//     &__list {
-//         display: flex;
-//         justify-content: center;
-//         margin-bottom: 34px;
-//         gap: 8px;
-//     }
-//     &__button {
-//         @extend %button;
-//         background-color: $tertiaryBcgColor;
-//         color: $titleColor;
-//         padding: 6px 22px;
-//         font-weight: 500;
-//         font-size: 16px;
-//         line-height: 1.6;
+    @media screen and (min-width: 1200px) {
+       padding: 94px 0;
+    }
 
-//         transition: background-color 250ms $cubicBezier, 
-//         color 250ms $cubicBezier, box-shadow 250ms $cubicBezier;
+    &__container {
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        gap: 8px;
+
+            @media screen and (min-width: 768px) {
+                justify-content: center;
+            }
+    }
+    &__button {
+        @extend %button;
+        background-color: $tertiaryBcgColor;
+        color: $titleColor;
+        padding: 6px 22px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+
+        transition: background-color 250ms $cubicBezier, 
+        color 250ms $cubicBezier, box-shadow 250ms $cubicBezier;
     
-//         &:hover,
-//         &:focus {
-//             background-color: $accentColor;
-//             color: $primaryWhiteColor;
-//             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//         }
-//     }
-// }
+        &:hover,
+        &:focus {
+            background-color: $accentColor;
+            color: $primaryWhiteColor;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+    }
+}
 

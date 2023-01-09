@@ -1,7 +1,6 @@
 .header {
     border-bottom: 1px solid $borderColor;
-    background: $primaryBcgColor;
-
+    
     @media screen and (min-width:768px) {
             position: relative;
             height: 80px;
@@ -30,21 +29,13 @@
 .header__logo {
     @extend %logo;
     color: $logoColor;
-
-    &--accent {
-        color: $accentColor;
-    }
-
-@media screen and (min-width: 480px) {
-       font-size: 24px;
-    line-height: 1.17;
-    }
-
-@media screen and (min-width: 768px) {
-
     font-size: 24px;
     line-height: 1.17;
-    }
+
+        &--accent {
+            color: $accentColor;
+        }
+
 }
 @media screen and (min-width: 1200px) {
     .header__logo {
