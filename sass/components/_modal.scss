@@ -16,17 +16,24 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     border: 1px solid $primaryWhiteColor;
     border-radius: $borderRadius;
     background-color: $primaryWhiteColor;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $cubicBezier;
+        
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+        }
     
     .backdrop--is-hidden & {
         transform: translate(-50%, -50%) scale(0.8);
+
+       
     }
     &__close {
         position: absolute;
