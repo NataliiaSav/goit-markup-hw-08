@@ -5,8 +5,7 @@
     .mobile-container__nav {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
-        padding-top: 48px;
+        margin-bottom: 306px;
     }
     .mobile-container__item:not(:last-child) {
         padding-bottom: 32px;
@@ -25,14 +24,18 @@
             color: $accentColor;     
         }
     }
+    .mobile-contacts-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
     .mobile-contacts {
         display: flex;
-        padding-left: 40px;
-        padding-top: 306px;
         flex-direction: column;
 
         &__item {
-        
+            font-size: 18px;
             font-weight: 500;
             letter-spacing: 0.02em;
             color: $textColor;
@@ -47,8 +50,11 @@
         }
 
         &__tel {
-            font-size: 34px;
+            font-size: 24px;
             line-height: 1.18;
+            @media screen and (min-width: 480px) {
+                font-size: 34px;
+            }
         }
         &__mail {
             font-size: 24px;
@@ -57,13 +63,16 @@
     }
     .social-mobile {
         display: flex;
-        padding: 64px  0 48px 40px;
         gap: 10px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 12px;
         line-height: 1.22;
         letter-spacing: 0.02em;
         color: $accentColor;
+
+        @media screen and (min-width: 480px) {
+            font-size: 18px;
+        }
 
         &__item:not(:last-child) {
             border-right: 1px solid rgba(33, 33, 33, 0.2);
