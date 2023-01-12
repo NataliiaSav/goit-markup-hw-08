@@ -5,7 +5,7 @@
     .mobile-container__nav {
         display: flex;
         flex-direction: column;
-        margin-bottom: 306px;
+        
     }
     .mobile-container__item:not(:last-child) {
         padding-bottom: 32px;
@@ -63,6 +63,7 @@
     }
     .social-mobile {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
         font-weight: 500;
         font-size: 12px;
@@ -82,50 +83,50 @@
 }
 @media screen and (min-width: 768px) {
     .site-nav {
-            display: flex;
-            margin-left: 88px;
+        display: flex;
+        margin-left: 88px;
     
-            &__item:not(:last-child) {
-                margin-right: 50px;
-            }
-    
-            &__link {
-                display: block;
-                padding-top: 32px;
-                padding-bottom: 32px;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.02em;
-                color: $titleColor;
-                text-decoration: none;
-    
-                transition: color 250ms $cubicBezier;
-            }
-    
-            &__link--current {
-                color: $accentColor;
-            }
-    
-            &__item {
-                position: relative;
-            }
-    
-            &__link--current::after {
-                content: "";
-                display: block;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                height: 4px;
-                border-radius: 2px;
-                background-color: $accentColor;
-            }
-    
-            &__link:hover,
-            &__link:focus {
-                color: $accentColor;
-            }
+        &__item:not(:last-child) {
+        margin-right: 50px;
         }
+    
+        &__link {
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: $titleColor;
+            text-decoration: none;
+    
+            transition: color 250ms $cubicBezier;
+        }
+    
+        &__link--current {
+            color: $accentColor;
+        }
+    
+        &__item {
+            position: relative;
+        }
+    
+        &__link--current::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $accentColor;
+        }
+    
+        &__link:hover,
+        &__link:focus {
+            color: $accentColor;
+        }
+    }
     
 }
