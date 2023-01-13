@@ -951,6 +951,7 @@ a {
   .footer-subscribe__form {
     display: flex;
     flex-direction: row;
+    max-width: none;
   }
 }
 .footer-subscribe__label {
